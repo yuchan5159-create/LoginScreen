@@ -13,17 +13,17 @@ namespace LoginScreen
 
         private void button1_Click(object sender, EventArgs e)
         {
-           string inputID = txtID.Text.Trim();
-           string inputPW = txtpw.Text.Trim();
+            string inputID = txtID.Text.Trim();
+            string inputPW = txtpw.Text.Trim();
 
-        
-            if (inputID  == "admin" && inputPW == "superman")
+
+            if (inputID == "admin" && inputPW == "superman")
             {
                 MessageBox.Show("로그인 성공!", "알림");
             }
             else
             {
-                MessageBox.Show("아이디 또는 패스워드가 틀렸습니다.");
+                MessageBox.Show("아이디 또는 패스워드가 틀렸습니다.", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -62,6 +62,24 @@ namespace LoginScreen
                 txtpw.UseSystemPasswordChar = false;
                 txtpw.Text = "Password";
                 txtpw.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;  // 기본 비프음 방지
+                txtpw.Focus(); // 패스워드 입력창이 포커스를 갖게끔
+            }
+        }
+
+        private void txtpw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // 기본 비프음 방지
+                btnLogin.PerformClick(); // 버튼이 눌린 것처럼 만들기
             }
         }
     }

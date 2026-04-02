@@ -54,6 +54,7 @@
             txtID.TabIndex = 2;
             txtID.Text = "ID";
             txtID.Enter += txtID_Enter;
+            txtID.KeyDown += txtID_KeyDown;
             txtID.Leave += txtID_Leave;
             // 
             // txtpw
@@ -67,6 +68,7 @@
             txtpw.Text = "Password";
             txtpw.TextChanged += textBox2_TextChanged;
             txtpw.Enter += txtpw_Enter;
+            txtpw.KeyDown += txtpw_KeyDown;
             txtpw.Leave += txtpw_Leave;
             // 
             // btnLogin
