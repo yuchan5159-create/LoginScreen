@@ -13,13 +13,17 @@ namespace LoginScreen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtID.Text == "admin" && txtpw.Text == "superman")
+           string inputID = txtID.Text.Trim();
+           string inputPW = txtpw.Text.Trim();
+
+        
+            if (inputID  == "admin" && inputPW == "superman")
             {
-                MessageBox.Show("로그인 성공!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("로그인 성공!", "알림");
             }
             else
             {
-                MessageBox.Show("아이디 또는 패스워드가 틀렸습니다.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("아이디 또는 패스워드가 틀렸습니다.");
             }
         }
 
