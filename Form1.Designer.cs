@@ -28,70 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Login = new Label();
+            LblAppname = new Label();
             txtID = new TextBox();
             txtpw = new TextBox();
-            LogB = new Button();
+            btnLogin = new Button();
             SuspendLayout();
             // 
-            // Login
+            // LblAppname
             // 
-            Login.AutoSize = true;
-            Login.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Login.Location = new Point(286, 54);
-            Login.Name = "Login";
-            Login.Size = new Size(143, 62);
-            Login.TabIndex = 0;
-            Login.Text = "Login";
+            LblAppname.AutoSize = true;
+            LblAppname.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblAppname.Location = new Point(187, 12);
+            LblAppname.Name = "LblAppname";
+            LblAppname.Size = new Size(361, 159);
+            LblAppname.TabIndex = 0;
+            LblAppname.Text = "Login";
             // 
             // txtID
             // 
-            txtID.Location = new Point(201, 143);
+            txtID.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtID.ForeColor = Color.Silver;
+            txtID.Location = new Point(197, 174);
             txtID.Name = "txtID";
-            txtID.PlaceholderText = "ID";
-            txtID.Size = new Size(340, 27);
-            txtID.TabIndex = 1;
+            txtID.Size = new Size(340, 43);
+            txtID.TabIndex = 2;
+            txtID.Text = "ID";
+            txtID.Enter += txtID_Enter;
+            txtID.Leave += txtID_Leave;
             // 
             // txtpw
             // 
-            txtpw.Location = new Point(201, 209);
+            txtpw.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtpw.ForeColor = Color.Silver;
+            txtpw.Location = new Point(197, 242);
             txtpw.Name = "txtpw";
-            txtpw.PlaceholderText = "Password";
-            txtpw.Size = new Size(340, 27);
-            txtpw.TabIndex = 2;
+            txtpw.Size = new Size(340, 43);
+            txtpw.TabIndex = 3;
+            txtpw.Text = "Password";
+            txtpw.UseSystemPasswordChar = true;
             txtpw.TextChanged += textBox2_TextChanged;
+            txtpw.Enter += txtpw_Enter;
+            txtpw.Leave += txtpw_Leave;
             // 
-            // LogB
+            // btnLogin
             // 
-            LogB.BackColor = SystemColors.ActiveCaption;
-            LogB.Location = new Point(301, 331);
-            LogB.Name = "LogB";
-            LogB.Size = new Size(94, 29);
-            LogB.TabIndex = 3;
-            LogB.Text = "로그인";
-            LogB.UseVisualStyleBackColor = false;
-            LogB.Click += button1_Click;
+            btnLogin.BackColor = SystemColors.ActiveCaption;
+            btnLogin.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogin.Location = new Point(264, 341);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(206, 82);
+            btnLogin.TabIndex = 1;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LogB);
+            Controls.Add(btnLogin);
             Controls.Add(txtpw);
             Controls.Add(txtID);
-            Controls.Add(Login);
+            Controls.Add(LblAppname);
             Name = "Form1";
-            Text = "Form1";
+            Text = "3";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label Login;
+        private Label LblAppname;
         private TextBox txtID;
         private TextBox txtpw;
-        private Button LogB;
+        private Button btnLogin;
     }
 }
