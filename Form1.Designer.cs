@@ -46,18 +46,18 @@
             // 
             // txtID
             // 
-            txtID.Location = new Point(286, 144);
+            txtID.Location = new Point(201, 143);
             txtID.Name = "txtID";
             txtID.PlaceholderText = "ID";
-            txtID.Size = new Size(125, 27);
+            txtID.Size = new Size(340, 27);
             txtID.TabIndex = 1;
             // 
             // txtpw
             // 
-            txtpw.Location = new Point(286, 208);
+            txtpw.Location = new Point(201, 209);
             txtpw.Name = "txtpw";
             txtpw.PlaceholderText = "Password";
-            txtpw.Size = new Size(125, 27);
+            txtpw.Size = new Size(340, 27);
             txtpw.TabIndex = 2;
             txtpw.TextChanged += textBox2_TextChanged;
             // 
