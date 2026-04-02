@@ -19,11 +19,14 @@ namespace LoginScreen
 
             if (inputID == "admin" && inputPW == "superman")
             {
+                lblerrormsg.Visible = false;
                 MessageBox.Show("로그인 성공!", "알림");
+               
             }
             else
             {
                 MessageBox.Show("아이디 또는 패스워드가 틀렸습니다.", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblerrormsg.Visible = true;
             }
         }
 
