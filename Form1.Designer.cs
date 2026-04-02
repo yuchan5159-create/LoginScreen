@@ -65,7 +65,6 @@
             txtpw.Size = new Size(340, 43);
             txtpw.TabIndex = 3;
             txtpw.Text = "Password";
-            txtpw.UseSystemPasswordChar = true;
             txtpw.TextChanged += textBox2_TextChanged;
             txtpw.Enter += txtpw_Enter;
             txtpw.Leave += txtpw_Leave;

@@ -13,7 +13,7 @@ namespace LoginScreen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtID.Text == "yuchan1234" && txtpw.Text == "juc@1234")
+            if (txtID.Text == "admin" && txtpw.Text == "superman")
             {
                 MessageBox.Show("로그인 성공!", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -47,6 +47,7 @@ namespace LoginScreen
             {
                 txtpw.Text = "";
                 txtpw.ForeColor = Color.Black;
+                txtpw.UseSystemPasswordChar = true;
             }
         }
 
@@ -54,6 +55,7 @@ namespace LoginScreen
         {
             if (string.IsNullOrWhiteSpace(txtpw.Text))
             {
+                txtpw.UseSystemPasswordChar = false;
                 txtpw.Text = "Password";
                 txtpw.ForeColor = Color.Silver;
             }
