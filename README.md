@@ -12,6 +12,7 @@
  - enter, leave를 사용하여 textbox 기능 추가
  - MessageBoxIcon.Error 경고 메시지 띄우기
  - Enter키 이벤트 처리
+ - Label의 속성 Visible
  
 
 
@@ -32,15 +33,9 @@ enter를 사용하여 다음 단계로 넘어가도록 만들었다.
 
 ##실행 화면 ( 과제2)
 -과제2 코드의 실행 스크린샷
+<img width="305" height="182" alt="5주차 2단계 visiable" src="https://github.com/user-attachments/assets/d3e6ddf8-d4cb-4457-85c0-edd8ea543299" />
+Label 속성창에 있는 Visible을 사용해 에러메시지 표시를 조건에 따라 보이도록 만들었다. 
+ <img width="900" height="423" alt="5주차 과제2 실패 사진" src="https://github.com/user-attachments/assets/6130d826-924b-410a-a148-5eee01f9ed6e" />
+아이디 또는 패스워드를 잘못 입력하면 보이도록 만들었다. 
 
 
-
-
-##실행 화면( 과제3)
--과제3 코드의 실행 스크린샷
-
-
-
-
-#실행 화면 ( 과제4)
--과제4 코드의 실행 스크린샷
